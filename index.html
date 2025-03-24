@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarDOER Technologies : Home Page</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="assets/logo.png" alt="Company Logo" class="logo">
+            <h1>Fictional Company</h1>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero-section" id="home">
+        <div class="hero-image-slider">
+            <img id="slider-image" src="assets/image1.jpeg" alt="Hero" />
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1>Welcome to Fictional Company</h1>
+                    <p>We provide innovative solutions for your business needs.</p>
+                    <button class="cta-button">Learn More</button>
+                </div>
+                <div class="slider-controls">
+                    <button onclick="prevImage()">&#10094;</button>
+                    <button onclick="nextImage()">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>We create responsive and user-friendly websites.</p>
+            </div>
+            <div class="service-card">
+                <h3>Mobile App Development</h3>
+                <p>We develop native and cross-platform mobile applications.</p>
+            </div>
+            <div class="service-card">
+                <h3>Digital Marketing</h3>
+                <p>We help you reach your target audience through digital channels.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form" id="contact">
+        <h2>Contact Us</h2>
+        <form onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
